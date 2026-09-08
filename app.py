@@ -1143,7 +1143,6 @@ elif nav_selection == "📈 Executive Business Insights":
         
         fig_scat = px.scatter(
             scat_df, x="daily_notifications", y="screen_time", color="addiction_risk_level",
-            trendline="ols",
             color_discrete_map={"High Risk": "#f43f5e", "Medium Risk": "#f59e0b", "Low Risk": "#10b981"},
             labels={"daily_notifications": "Daily Notifications Received", "screen_time": "Screen Time (Hours)"}
         )
